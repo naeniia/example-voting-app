@@ -29,6 +29,7 @@ services:
 
   worker:
     image: dockersamples/examplevotingapp_worker
+    scale: 2
     depends_on:
       redis:
         condition: service_healthy 
